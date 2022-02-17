@@ -3,6 +3,8 @@ const statsDiv = document.getElementById('stats');
 const startGameButton = document.getElementById('start-game');
 const randomGameButton = document.getElementById('random-game');
 const customGameButton = document.getElementById('custom-game');
+const fileButton = document.getElementById('fileInput');
+const randomNumberButton = document.getElementById('random-number');
 
 
 console.log(typingDiv);
@@ -12,11 +14,6 @@ const paragraphs = ['The function of a paragraph is to mark a pause, setting the
 const random = ['violation choose cooperative domestic poor initial floor photocopy discrimination obligation', 'tray technique letter courage arise disappear inappropriate proud column influence implication steam get news census concrete jurisdiction theorist sand hell']
 
 const custom = ["This is a sample custom text file that I plan to use for user inputted typing tests"]
-// let fs = require('fs');
-// fs.readFile('../custom.txt', function(text){
-//     let textByLine = text.split('\n');
-// })
-
 
 
 const startGame = () => {
@@ -24,6 +21,8 @@ const startGame = () => {
     startGameButton.classList.add('hidden');
     randomGameButton.classList.add('hidden');
     customGameButton.classList.add('hidden');
+    fileButton.classList.add('hidden');
+    randomNumberButton.classList.add('hidden');
     typingDiv.innerHTML = '';
     statsDiv.innerHTML = '';
     const text = paragraphs[Math.floor(Math.random() * paragraphs.length)];
@@ -69,6 +68,8 @@ const startGame = () => {
             startGameButton.classList.remove('hidden');
             randomGameButton.classList.remove('hidden');
             customGameButton.classList.remove('hidden');
+            fileButton.classList.remove('hidden');
+            randomNumberButton.classList.remove('hidden');
             return
         }
         curserChar.classList.add('active');
@@ -83,6 +84,8 @@ const randomGame = () => {
     startGameButton.classList.add('hidden');
     randomGameButton.classList.add('hidden');
     customGameButton.classList.add('hidden');
+    randomNumberButton.classList.add('hidden');
+    fileButton.classList.add('hidden');
     typingDiv.innerHTML = '';
     statsDiv.innerHTML = '';
     const text = random[Math.floor(Math.random() * random.length)];
@@ -128,6 +131,8 @@ const randomGame = () => {
             startGameButton.classList.remove('hidden');
             randomGameButton.classList.remove('hidden');
             customGameButton.classList.remove('hidden');
+            fileButton.classList.remove('hidden');
+            randomNumberButton.classList.remove('hidden');
             return
         }
         curserChar.classList.add('active');
@@ -142,6 +147,8 @@ const customGame = () => {
     startGameButton.classList.add('hidden');
     randomGameButton.classList.add('hidden');
     customGameButton.classList.add('hidden');
+    randomNumberButton.classList.add('hidden');
+    fileButton.classList.add('hidden');
     typingDiv.innerHTML = '';
     statsDiv.innerHTML = '';
     const text = custom[Math.floor(Math.random() * custom.length)];
@@ -187,6 +194,8 @@ const customGame = () => {
         startGameButton.classList.remove('hidden');
         randomGameButton.classList.remove('hidden');
         customGameButton.classList.remove('hidden');
+        fileButton.classList.remove('hidden');
+        randomNumberButton.classList.remove('hidden');
         return
     }
     curserChar.classList.add('active');
