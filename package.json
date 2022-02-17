@@ -1,0 +1,23 @@
+{
+  "name": "cs361_portfolio_project",
+  "version": "1.0.0",
+  "type":"module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexsdeatherage/CS361_Portfolio_Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexsdeatherage/CS361_Portfolio_Project/issues"
+  },
+  "homepage": "https://github.com/alexsdeatherage/CS361_Portfolio_Project#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}

@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src='js/main.js' defer></script>
-
     <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
-    <div class="timer" id="timer"></div>
-    <div class='container'>
-        <div class='quote-display' id="quote-display">quote</div>
-        <textarea id="quote-input"  class='quote-input' autofocus>quote</textarea>
-    </div>
+    <div id="typing"></div>
+    <div id="stats"></div>
+
+    <button id='start-game' onclick="startGame();"> Start Game</button>
+    <button id='random-game' onclick="randomGame();"> Random Game</button>
+    <button id="custom-game" onclick="customGame();"> Custom Game</button>
+    <!-- <input type="file" id="fileInput"> -->
+    <script src="js/index.js"></script>
 </body>
 </html>
